@@ -12,7 +12,8 @@ def get_html(url):
     return browser.page_source
 
 def press_seemore():
-    browser.find_element_by_css_selector('button.c-link--btn').click()
+    q = browser.find_element_by_css_selector('button.c-link--btn')
+    q.click()
 
 def scrap_data(article):
     try:
